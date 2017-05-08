@@ -88,4 +88,14 @@ For run Spider tests follow::
 
     cd scraper/
     (hacker_news_scraper/scraper)$ python -m unittest discover
+    
+    
+    Parsing
+-------
+
+For start parsing follow the command::
+
+    cd scraper/
+    (hacker_news_scraper/scraper)$ scrapy crawl news -a page_count=N
+where, N is the number of pages you need to parse
 
