@@ -12,3 +12,6 @@ djangorestframework==3.6.2
 Markdown==2.6.8
 # Filtering support
 django-filter==1.0.2
+Scrapy==1.3.3
+# Scrapy extension to write scraped items using Django models
+scrapy-djangoitem==1.1.1
