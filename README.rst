@@ -90,7 +90,7 @@ For run Spider tests follow::
     (hacker_news_scraper/scraper)$ python -m unittest discover
     
     
-    Parsing
+Parsing
 -------
 
 For start parsing follow the command::
