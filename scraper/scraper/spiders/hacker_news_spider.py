@@ -23,11 +23,7 @@ class HackerNewsSpider(scrapy.Spider):
         return row.css(path).extract_first()
 
     def parse(self, response):
-        """ This function parses a sample response.
-        @url https://news.ycombinator.com/
-        @returns items 1 30
-        @returns requests 0 0
-        """
+
         rows = response.xpath('//tr[@class="athing"]')
         for row in rows:
             site_url = self.extractor(row, 'span.sitebit.comhead>a::attr(href)')
