@@ -33,6 +33,11 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.humanize',
     'django.contrib.sitemaps',
+    # 3rd party apps
+    'rest_framework',
+    # project apps
+    'hacker_news_scraper.api',
+    'hacker_news_scraper.posts',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -205,3 +210,8 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_BROWSER_XSS_FILTER = True
 CSRF_COOKIE_HTTPONLY = True
 X_FRAME_OPTIONS = 'DENY'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 30
+}
