@@ -36,7 +36,7 @@ Getting Started
 
 First clone the repository from Github and switch to the new directory::
 
-    $ git clone git@github.com:[ORGANIZATION]/hacker_news_scraper.git
+    $ git clone git@github.com:kartava/hacker_news_scraper.git
     $ cd hacker_news_scraper
 
 To setup your local environment you should create a virtualenv and install the
@@ -75,3 +75,17 @@ Or, on a custom port and address::
 
 Any changes made to Python, files will be detected and rebuilt transparently as
 long as the development server is running.
+
+
+Testing
+-------
+
+For run API tests follow the command::
+
+    (hacker_news_scraper)$ python manage.py test
+
+For run Spider tests follow::
+
+    cd scraper/
+    (hacker_news_scraper/scraper)$ python -m unittest discover
+
