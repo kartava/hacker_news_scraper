@@ -1,7 +1,7 @@
 -r base.txt
-django-debug-toolbar==1.4
+-e git+https://github.com/jazzband/django-debug-toolbar.git@c998e961c7f9e8c3968f3ad2d4dc5b83e2e018ae#egg=django_debug_toolbar
 # Required by django-debug-toolbar
-sqlparse==0.1.18
+sqlparse==0.2.3
 
 coverage==3.7.1
 flake8==2.4.1
