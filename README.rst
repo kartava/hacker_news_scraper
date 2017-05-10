@@ -46,7 +46,6 @@ necessary requirements::
     $ which python2.7
     $ mkvirtualenv hacker_news_scraper -p `which python2.7`
     (hacker_news_scraper)$ pip install -r requirements/dev.txt
-    (hacker_news_scraper)$ npm install
 
 Next, we'll set up our local environment variables. We use `django-dotenv
 <https://github.com/jpadilla/django-dotenv>`_ to help with this. It reads environment variables

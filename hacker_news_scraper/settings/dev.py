@@ -21,6 +21,10 @@ CELERY_EAGER_PROPAGATES_EXCEPTIONS = True
 
 SECRET_KEY = os.environ.get('SECRET_KEY', '9f69b6-f62n5)%y83sjw(wyoaq8j#a)=27xunvawf6-(r20k(n')
 
+MIDDLEWARE_CLASSES += (
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
+)
+
 # Special test settings
 if 'test' in sys.argv:
     PASSWORD_HASHERS = (
